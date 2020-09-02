@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<ip-email-builder style="height: calc(100vh - 80px)">
+    <!-- Include custom html near top buttons -->
+    <div class="top-actions">
+      <button
+        mat-button
+        (click)="sendTestMail()"
+        [disabled]="isLoading | async"
+        color="primary"
+      >
+        Send a test email
+      </button>
+    </div>
+    <!-- Include custom html after content blocks -->
+    <div class="after-content-blocks"></div>
+    <!-- Include custom html after structure blocks -->
+    <div class="after-structure-blocks"></div>
+  </ip-email-builder>
+
+<router-outlet></router-outlet>
